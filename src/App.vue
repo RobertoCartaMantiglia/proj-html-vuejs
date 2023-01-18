@@ -1,10 +1,12 @@
 <script >
 import CompHeader from './components/CompHeader.vue';
+import CompMain from './components/CompMain.vue';
 
 export default {
 
   components: {
     CompHeader,
+    CompMain
   }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
 
   <CompHeader />
+  <CompMain />
 </template>
 
 <style lang="scss">
