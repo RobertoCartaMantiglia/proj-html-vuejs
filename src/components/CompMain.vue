@@ -23,45 +23,67 @@ export default {
         <section class="main-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 m-auto pt-3">
+                    <div class="col-6 m-auto pt-3 mb-5">
                         <h2 class="paragraph-title pb-4">Latest Band News</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
                             laudantium,
                             dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
                             ullam.
-
                         </p>
                     </div>
                 </div>
+                <div class="cards-wrapper col-10 d-flex m-auto justify-content-center">
+
+                    <!-- sezione sinistra delle card  -->
+
+                    <div class="col-6 d-flex flex-wrap left-side me-3">
+                        <div class="card horizontal-card mb-3">
+
+                        </div>
+
+                        <div class="card  vertical-card mb-3">
+
+                        </div>
+
+                        <div class="card  vertical-card mb-3">
+
+                        </div>
+                        <div class="card horizontal-card">
+
+                        </div>
+                    </div>
+
+                    <!-- sezione destra delle carte  -->
+
+                    <div class="col-3 right-side">
+                        <div class=" card vertical-card">
+
+                        </div>
+                        <div class="card vertical-card">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-9 d-flex m-auto justify-content-center">
-                        <div class="col-6 d-flex flex-wrap left-side">
-                            <div class="card horizontal-card">
+        </section>
 
-                            </div>
+        <!-- divider -->
 
-                            <div class="card vertical-card">
+        <section class="divider">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4 m-auto">
+                        <a href="#" class="text-white">VIEW ALL LATEST NEWS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            </div>
+        <section class="jumbo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
 
-                            <div class="card vertical-card">
-
-                            </div>
-                            <div class="card horizontal-card">
-
-                            </div>
-
-                        </div>
-                        <div class="col-4 right-side">
-                            <div class="col-3 card vertical-card">
-
-                            </div>
-                            <div class="col-3 card vertical-card">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -78,12 +100,17 @@ export default {
     background-color: $bg-color-small-section;
 }
 
+.main-section {
+    background-color: $bg-principal-section;
+}
+
 .paragraph-title {
     border-bottom: 1px solid $words;
 }
 
-.main-section {
-    background-color: $bg-principal-section;
+
+.cards-wrapper {
+    padding-bottom: 4rem;
 }
 
 .horizontal-card {
@@ -94,14 +121,27 @@ export default {
 
 .vertical-card {
     height: 300px;
-    width: 50%;
+    width: calc((100% / 2) - 0.5rem);
+    margin-right: 0.5rem;
     background-color: $bg-color-small-section;
 }
 
 .right-side {
     .vertical-card {
         width: 100%;
-        height: 50%;
+        height: calc((100% / 2) - 1rem);
+        margin-bottom: 0.5rem;
     }
+}
+
+.divider {
+    background-color: $divider-color;
+}
+
+.jumbo {
+    height: 80vh;
+    background-image: url("../assets/images/home-testimonial-parallax.jpg");
+    background-position: center;
+    background-size: cover;
 }
 </style>
