@@ -122,7 +122,7 @@ export default {
         </section>
 
         <!-- date-section -->
-        <section class="date-section">
+        <section class="date-section pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-6 m-auto pt-3">
@@ -141,6 +141,18 @@ export default {
                                 <span class="text-white px-2">+</span> {{ dateElement.text }}
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- divider -->
+
+        <section class="divider">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4 m-auto">
+                        <a href="#" class="text-white">VIEW ALL LIVE DATES</a>
                     </div>
                 </div>
             </div>
