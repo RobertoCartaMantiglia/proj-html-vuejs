@@ -1,6 +1,28 @@
 <script>
 export default {
-    name: 'CompMain'
+    name: 'CompMain',
+    data() {
+        return {
+            datesList: [
+                {
+                    text: '17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA'
+                },
+                {
+                    text: '24/09/2020 GROOVEFEST DOMINICAL REPUBLIC'
+                },
+                {
+                    text: '31/10/2020 OASIS FESTVAL 2020 MARRAKECH, MOROCCO'
+                },
+                {
+                    text: '07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO'
+                },
+                {
+                    text: '10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA'
+                },
+
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -99,7 +121,8 @@ export default {
             </div>
         </section>
 
-        <section class="paragraph-section">
+        <!-- date-section -->
+        <section class="date-section">
             <div class="container">
                 <div class="row">
                     <div class="col-6 m-auto pt-3">
@@ -108,12 +131,21 @@ export default {
                             laudantium,
                             dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
                             ullam.
-
                         </p>
+                    </div>
+                </div>
+                <div class="col-10 m-auto">
+                    <div class="date-list">
+                        <ul class="mt-4">
+                            <li v-for="dateElement in datesList">
+                                + {{ dateElement.text }}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 </template>
 
@@ -128,6 +160,25 @@ export default {
 
 .main-section {
     background-color: $bg-principal-section;
+}
+
+.date-section {
+    background-color: $bg-principal-section;
+
+    .date-list {
+        color: $li-date-color;
+        text-align: left;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                background-color: $bg-color-small-section;
+                padding: 0.5rem;
+                margin-bottom: 0.6rem;
+            }
+        }
+    }
 }
 
 .paragraph-title {
