@@ -138,7 +138,7 @@ export default {
                     <div class="date-list">
                         <ul class="mt-4">
                             <li v-for="dateElement in datesList">
-                                + {{ dateElement.text }}
+                                <span class="text-white px-2">+</span> {{ dateElement.text }}
                             </li>
                         </ul>
                     </div>
@@ -175,7 +175,9 @@ export default {
             li {
                 background-color: $bg-color-small-section;
                 padding: 0.5rem;
+                font-size: 0.8rem;
                 margin-bottom: 0.6rem;
+
             }
         }
     }
