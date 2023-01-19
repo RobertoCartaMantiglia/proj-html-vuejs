@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <main>
-        <section class="first-section">
+        <section class="paragraph-section">
             <div class="container">
                 <div class="row">
                     <div class="col-6 m-auto pt-3">
@@ -79,6 +79,8 @@ export default {
             </div>
         </section>
 
+        <!-- second jumbo -->
+
         <section class="jumbo">
             <div class="container">
                 <div class="row">
@@ -96,6 +98,22 @@ export default {
                 </div>
             </div>
         </section>
+
+        <section class="paragraph-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 m-auto pt-3">
+                        <h2 class="paragraph-title pb-4">Live Dates</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
+                            laudantium,
+                            dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
+                            ullam.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -103,7 +121,7 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables.scss' as *;
 
-.first-section {
+.paragraph-section {
     height: 225px;
     background-color: $bg-color-small-section;
 }
