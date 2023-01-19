@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,100;1,200;1,300;1,500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 section {
     text-align: center;
 }
@@ -5,7 +11,7 @@ section {
 h1,
 h2 {
     color: white;
-    font-weight: 700;
+    font-weight: 700 italic;
 }
 
 p {

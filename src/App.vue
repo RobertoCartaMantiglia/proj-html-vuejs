@@ -15,9 +15,11 @@ export default {
 
 <template>
 
-  <CompHeader />
-  <CompMain />
-  <CompFooter />
+  <body>
+    <CompHeader />
+    <CompMain />
+    <CompFooter />
+  </body>
 
 
 </template>
