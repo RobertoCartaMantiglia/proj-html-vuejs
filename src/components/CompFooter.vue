@@ -90,7 +90,6 @@ export default {
                                     <img src="../assets/images/footer-periscope.png" alt="#">
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -122,6 +121,7 @@ export default {
 ul {
     display: flex;
     list-style-type: none;
+    margin-bottom: 0;
 
     a {
         color: $words;

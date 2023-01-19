@@ -10,7 +10,7 @@ export default {
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-between mt-2">
+                    <div class="col-12 d-flex justify-content-between mt-3">
                         <div class="">
                             <img src="../assets/images/avada-music-logo.png" class="w-75 ">
                         </div>
@@ -27,6 +27,15 @@ export default {
                     </div>
                     <div class="title-section col-8 text-center">
                         <h1 class="main-title">Untold Stories</h1>
+                        <p>There is an untold story behind every favourite song</p>
+                        <div>
+                            <button class=" left-button">
+                                LATEST ALBUM
+                            </button>
+                            <button class="right-button">
+                                LIVE DATES
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,6 +44,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/general.scss' as *;
+@use '../styles/partials/variables.scss' as *;
+
 header {
     height: 100vh;
     background-image: url("../src/assets/images/home_slider.jpg");
@@ -48,8 +60,31 @@ header {
     margin-top: 4.5rem;
 
     .main-title {
-        font-size: 6rem;
-
+        font-size: 5.5rem;
     }
+
+    p {
+        font-size: 1rem;
+        color: white;
+        padding-bottom: 1rem;
+        font-style: italic;
+    }
+}
+
+button {
+    padding: 0.5rem 1.3rem;
+    margin-right: 0.5rem;
+    color: white;
+
+}
+
+.left-button {
+    background-color: $btn-color;
+    border: none;
+}
+
+.right-button {
+    border: 0.5px-solid white;
+    background: none;
 }
 </style>
