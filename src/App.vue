@@ -1,12 +1,14 @@
 <script >
 import CompHeader from './components/CompHeader.vue';
 import CompMain from './components/CompMain.vue';
+import CompFooter from './components/CompFooter.vue';
 
 export default {
 
   components: {
     CompHeader,
-    CompMain
+    CompMain,
+    CompFooter
   }
 }
 </script>
@@ -15,6 +17,9 @@ export default {
 
   <CompHeader />
   <CompMain />
+  <CompFooter />
+
+
 </template>
 
 <style lang="scss">

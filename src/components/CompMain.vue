@@ -146,7 +146,7 @@ export default {
             </div>
         </section>
 
-        <!-- divider -->
+        <!--secondo  divider -->
 
         <section class="divider">
             <div class="container-fluid">
