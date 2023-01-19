@@ -80,10 +80,18 @@ export default {
         </section>
 
         <section class="jumbo">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div>
-
+                    <div class="col-6 m-auto text-center intervew-wrapper">
+                        <p class="intervew">"I just listened to it and said to myself, "Man, I really love this album."
+                            Still, today, it
+                            just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They're
+                            good. And they're inventive. I haven't heard anything this year that's as inventive. I don't
+                            really expect to."
+                        </p>
+                        <button>
+                            <img src="../assets/images/band_interview_play_icon.png" alt="#">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -140,8 +148,26 @@ export default {
 
 .jumbo {
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../assets/images/home-testimonial-parallax.jpg");
     background-position: center;
     background-size: cover;
+
+    .intervew {
+        color: white;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    button {
+        background: none;
+        border: none;
+
+        img {
+            width: 60px;
+        }
+    }
 }
 </style>
