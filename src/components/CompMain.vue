@@ -29,9 +29,11 @@ export default {
     <main>
         <section class="paragraph-section">
             <div class="container">
+                <div class="upper-separate m-auto"></div>
                 <div class="row">
                     <div class="col-6 m-auto pt-3">
-                        <h2 class="paragraph-title pb-4">Music is LIfe</h2>
+                        <h2 class="paragraph-title">Music is LIfe</h2>
+                        <div class="paragraph-underline m-auto my-4"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
                             laudantium,
                             dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
@@ -46,7 +48,8 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-6 m-auto pt-3 mb-5">
-                        <h2 class="paragraph-title pb-4">Latest Band News</h2>
+                        <h2>Latest Band News</h2>
+                        <div class="paragraph-underline m-auto my-4"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
                             laudantium,
                             dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
@@ -126,7 +129,8 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col-6 m-auto pt-3">
-                        <h2 class="paragraph-title pb-4">Live Dates</h2>
+                        <h2>Live Dates</h2>
+                        <div class="paragraph-underline m-auto my-4"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
                             laudantium,
                             dignissimos unde nobis adipisci illum pariatur provident neque nam, iure accusamus
@@ -195,10 +199,15 @@ export default {
     }
 }
 
-.paragraph-title {
-    border-bottom: 1px solid $words;
+.upper-separate {
+    width: 280px;
+    border: 4px solid $divider-color;
 }
 
+.paragraph-underline {
+    width: 180px;
+    border: 1px solid $background-social;
+}
 
 .cards-wrapper {
     padding-bottom: 4rem;
