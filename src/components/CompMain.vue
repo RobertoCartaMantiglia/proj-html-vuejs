@@ -1,10 +1,12 @@
 
 <script>
 import HorizonCard from './HorizonCard.vue';
+import DividerLink from './DividerLink.vue';
 export default {
     name: 'CompMain',
     components: {
         HorizonCard,
+        DividerLink,
     },
     data() {
         return {
