@@ -19,7 +19,7 @@ export default {
             <div class="container">
                 <div class="upper-separate m-auto"></div>
                 <div class="row">
-                    <div class="col-6 m-auto pt-3">
+                    <div class="col-6 m-auto pt-5">
                         <h2 class="paragraph-title">Music is LIfe</h2>
                         <div class="paragraph-underline m-auto my-4"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
@@ -35,7 +35,7 @@ export default {
         <section class="main-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 m-auto pt-3 mb-5">
+                    <div class="col-6 m-auto pt-5 mb-5">
                         <h2>Latest Band News</h2>
                         <div class="paragraph-underline m-auto my-4"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates

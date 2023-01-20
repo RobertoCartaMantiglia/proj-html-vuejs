@@ -28,7 +28,7 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-6 m-auto pt-3">
+            <div class="col-6 m-auto pt-5">
                 <h2>Live Dates</h2>
                 <div class="paragraph-underline m-auto my-4"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia voluptates
@@ -42,7 +42,7 @@ export default {
             <div class="date-list">
                 <ul class="mt-4">
                     <li v-for="dateElement in datesList">
-                        <span class="text-white px-2">+</span>
+                        <button class="btn text-white">+</button>
                         {{ dateElement.text }}
                     </li>
                 </ul>
