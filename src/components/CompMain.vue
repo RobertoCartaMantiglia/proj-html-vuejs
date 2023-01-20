@@ -253,6 +253,7 @@ export default {
 
     a {
         color: white;
+        font-size: 0.9rem;
     }
 }
 
