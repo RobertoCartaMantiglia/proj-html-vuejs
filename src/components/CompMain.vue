@@ -69,7 +69,7 @@ export default {
                     <!-- sezione sinistra delle card  -->
 
                     <div class="col-6 d-flex flex-wrap left-side me-3">
-                        <div class="card horizontal-card-wrap mb-3">
+                        <div class="card horizontal-card-wrap mb-2">
                             <div class="horizon-card">
                                 <img src="../assets/images/blog_music_techo-600x300.jpg" alt="#">
                                 <div class="card-info p-2">
@@ -81,12 +81,27 @@ export default {
                             </div>
                         </div>
 
-                        <div class=" vertical-card-wrap mb-3">
-
+                        <div class="card vertical-card-wrap mb-2">
+                            <div class="vertical-card">
+                                <img src="../assets/images/blog-post3-600x900.jpg" alt="#">
+                                <div class="card-info p-2">
+                                    <h4 class="pt-3">While my Guitar gently weeps</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sed ipsa
+                                        consequuntur non debitis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="card  vertical-card-wrap mb-3">
-
+                        <div class="card vertical-card-wrap mb-3">
+                            <div class="vertical-card">
+                                <img src="../assets/images/blog-post4-600x900.jpg" alt="#">
+                                <div class="card-info p-2">
+                                    <h4 class="pt-3">It just sounds better</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sed ipsa
+                                        consequuntur non debitis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="card horizontal-card-wrap">
                             <div class="horizon-card">
@@ -103,12 +118,8 @@ export default {
 
                     <!-- sezione destra delle carte  -->
 
-                    <div class="col-3 right-side">
-
+                    <div class="col-3  right-side">
                         <VerticalCardRight />
-                        <!-- <div class="card vertical-card-wrap">
-
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -252,19 +263,36 @@ export default {
 
         h4 {
             color: $card-title;
+            font-size: 0.9rem;
+            font-weight: bold;
         }
     }
 }
 
 .vertical-card-wrap {
-    height: 450px;
+    height: 440px;
     display: flex;
     width: calc((100% / 2) - 0.5rem);
     margin-right: 0.5rem;
     background-color: $bg-color-small-section;
+
+    .vertical-card {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+
+        img {
+            width: 100%;
+            height: 70%;
+        }
+
+        h4 {
+            color: $card-title;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    }
 }
-
-
 
 .divider {
     background-color: $divider-color;
