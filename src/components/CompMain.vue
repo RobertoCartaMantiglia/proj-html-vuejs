@@ -284,10 +284,15 @@ export default {
     button {
         background: none;
         border: none;
+        transition: 0.3s;
 
         img {
             width: 60px;
         }
+    }
+
+    button:hover {
+        transform: scale(1.2);
     }
 }
 </style>
