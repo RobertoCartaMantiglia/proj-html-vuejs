@@ -83,7 +83,8 @@ button {
     background: none;
 }
 
-.right-button:hover {
+.right-button:hover,
+.left-button:hover {
     color: black;
     border: none;
     background-color: white;
