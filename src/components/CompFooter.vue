@@ -24,7 +24,7 @@ export default {
                 },
 
             ],
-            ItemsFooterList: [
+            itemsFooterList: [
                 {
                     text: 'Copyright 2012 - 2020'
                 },
@@ -38,8 +38,7 @@ export default {
                     text: 'POWERED BY WORDPRESS'
                 },
 
-            ]
-
+            ],
         }
     }
 }
@@ -70,7 +69,7 @@ export default {
                     <div class="col-12 d-flex justify-content-between align-items-center">
                         <div>
                             <ul>
-                                <li v-for="item in ItemsFooterList">
+                                <li v-for="item in itemsFooterList">
                                     <a href="#">{{ item.text }} |</a>
                                 </li>
                             </ul>
@@ -136,6 +135,12 @@ li {
 
     img {
         width: 65%;
+    }
+}
+
+li:hover {
+    a {
+        color: $hover;
     }
 }
 </style>
