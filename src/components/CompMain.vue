@@ -70,7 +70,15 @@ export default {
 
                     <div class="col-6 d-flex flex-wrap left-side me-3">
                         <div class="card horizontal-card-wrap mb-3">
-                            <HorizonCard />
+                            <div class="horizon-card">
+                                <img src="../assets/images/blog_music_techo-600x300.jpg" alt="#">
+                                <div class="card-info p-2">
+                                    <h4 class="pt-3">Technology and Music</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sed ipsa
+                                        consequuntur non debitis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="card  vertical-card-wrap mb-3">
@@ -81,7 +89,15 @@ export default {
 
                         </div>
                         <div class="card horizontal-card-wrap">
-
+                            <div class="horizon-card">
+                                <img src="../assets/images/blog_flavor_rock-600x300.jpg" alt="#">
+                                <div class="card-info p-2">
+                                    <h4 class="pt-3">The flavour of Rock</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sed ipsa
+                                        consequuntur non debitis
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -224,6 +240,21 @@ export default {
     width: 100%;
     height: 300px;
     background-color: $bg-color-small-section;
+
+    .horizon-card {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+
+        img {
+            width: 100%;
+            height: 60%;
+        }
+
+        h4 {
+            color: $card-title;
+        }
+    }
 }
 
 .vertical-card-wrap {
