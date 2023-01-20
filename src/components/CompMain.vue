@@ -1,11 +1,11 @@
 
 <script>
-import HorizonCard from './HorizonCard.vue';
+import VerticalCardRight from './VerticalCardRight.vue';
 import DividerLink from './DividerLink.vue';
 export default {
     name: 'CompMain',
     components: {
-        HorizonCard,
+        VerticalCardRight,
         DividerLink,
     },
     data() {
@@ -81,7 +81,7 @@ export default {
                             </div>
                         </div>
 
-                        <div class="card  vertical-card-wrap mb-3">
+                        <div class=" vertical-card-wrap mb-3">
 
                         </div>
 
@@ -104,12 +104,11 @@ export default {
                     <!-- sezione destra delle carte  -->
 
                     <div class="col-3 right-side">
-                        <div class=" card vertical-card-wrap">
 
-                        </div>
-                        <div class="card vertical-card-wrap">
+                        <VerticalCardRight />
+                        <!-- <div class="card vertical-card-wrap">
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -259,18 +258,13 @@ export default {
 
 .vertical-card-wrap {
     height: 450px;
+    display: flex;
     width: calc((100% / 2) - 0.5rem);
     margin-right: 0.5rem;
     background-color: $bg-color-small-section;
 }
 
-.right-side {
-    .vertical-card-wrap {
-        width: 100%;
-        height: calc((100% / 2) - 1rem);
-        margin-bottom: 0.5rem;
-    }
-}
+
 
 .divider {
     background-color: $divider-color;
