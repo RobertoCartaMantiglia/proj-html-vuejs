@@ -26,7 +26,7 @@ export default {
 </script>
 <template>
     <div class="vertical-card-wrap" v-for="card in verticalRightCardsList">
-        <div class="vertical-card">
+        <div class="vertical-card pb-2">
             <img :src="getImagePath(card.thumb)" alt="#">
             <div class="card-info p-3">
                 <h4 class="pt-3">{{ card.title }}</h4>

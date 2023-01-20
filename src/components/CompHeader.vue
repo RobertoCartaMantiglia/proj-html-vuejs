@@ -79,7 +79,7 @@ button {
 }
 
 .left-button {
-    background-color: $btn-color;
+    background-color: $divider-color;
     border: none;
 }
 

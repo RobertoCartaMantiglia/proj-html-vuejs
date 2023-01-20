@@ -118,7 +118,7 @@ export default {
 
                     <!-- sezione destra delle carte  -->
 
-                    <div class="col-3  right-side">
+                    <div class="col-3 right-side">
                         <VerticalCardRight />
                     </div>
                 </div>
