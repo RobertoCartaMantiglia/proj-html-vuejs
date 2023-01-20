@@ -42,7 +42,8 @@ export default {
             <div class="date-list">
                 <ul class="mt-4">
                     <li v-for="dateElement in datesList">
-                        <span class="text-white px-2">+</span> {{ dateElement.text }}
+                        <span class="text-white px-2">+</span>
+                        {{ dateElement.text }}
                     </li>
                 </ul>
             </div>
