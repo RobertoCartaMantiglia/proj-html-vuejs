@@ -1,6 +1,11 @@
+
 <script>
+import HorizonCard from './HorizonCard.vue';
 export default {
     name: 'CompMain',
+    components: {
+        HorizonCard,
+    },
     data() {
         return {
             datesList: [
@@ -62,18 +67,18 @@ export default {
                     <!-- sezione sinistra delle card  -->
 
                     <div class="col-6 d-flex flex-wrap left-side me-3">
-                        <div class="card horizontal-card mb-3">
+                        <div class="card horizontal-card-wrap mb-3">
+                            <HorizonCard />
+                        </div>
+
+                        <div class="card  vertical-card-wrap mb-3">
 
                         </div>
 
-                        <div class="card  vertical-card mb-3">
+                        <div class="card  vertical-card-wrap mb-3">
 
                         </div>
-
-                        <div class="card  vertical-card mb-3">
-
-                        </div>
-                        <div class="card horizontal-card">
+                        <div class="card horizontal-card-wrap">
 
                         </div>
                     </div>
@@ -81,10 +86,10 @@ export default {
                     <!-- sezione destra delle carte  -->
 
                     <div class="col-3 right-side">
-                        <div class=" card vertical-card">
+                        <div class=" card vertical-card-wrap">
 
                         </div>
-                        <div class="card vertical-card">
+                        <div class="card vertical-card-wrap">
 
                         </div>
                     </div>
@@ -213,21 +218,21 @@ export default {
     padding-bottom: 4rem;
 }
 
-.horizontal-card {
+.horizontal-card-wrap {
     width: 100%;
-    height: 180px;
+    height: 300px;
     background-color: $bg-color-small-section;
 }
 
-.vertical-card {
-    height: 300px;
+.vertical-card-wrap {
+    height: 450px;
     width: calc((100% / 2) - 0.5rem);
     margin-right: 0.5rem;
     background-color: $bg-color-small-section;
 }
 
 .right-side {
-    .vertical-card {
+    .vertical-card-wrap {
         width: 100%;
         height: calc((100% / 2) - 1rem);
         margin-bottom: 0.5rem;
