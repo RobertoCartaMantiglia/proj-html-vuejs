@@ -76,11 +76,14 @@ button {
 .left-button {
     background-color: $divider-color;
     border: none;
+    transition: 0.3s;
 }
 
 .right-button {
     border: 0.5px-solid white;
     background: none;
+    transition: 0.3s;
+
 }
 
 .right-button:hover,
