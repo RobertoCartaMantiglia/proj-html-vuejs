@@ -50,7 +50,7 @@ export default {
                     <!-- sezione sinistra delle card  -->
 
                     <div class="col-6 d-flex flex-wrap left-side me-3">
-                        <div class="card horizontal-card-wrap mb-2">
+                        <div class="card horizontal-card-wrap mb-3">
                             <div class="horizon-card">
                                 <img src="../assets/images/blog_music_techo-600x300.jpg" alt="#">
                                 <div class="card-info p-2">
@@ -62,7 +62,7 @@ export default {
                             </div>
                         </div>
 
-                        <div class="card vertical-card-wrap mb-2">
+                        <div class="card vertical-card-wrap mb-3">
                             <div class="vertical-card">
                                 <img src="../assets/images/blog-post3-600x900.jpg" alt="#">
                                 <div class="card-info p-2">
