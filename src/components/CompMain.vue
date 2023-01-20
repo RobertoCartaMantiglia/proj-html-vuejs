@@ -127,14 +127,8 @@ export default {
 
         <!-- divider -->
 
-        <section class="divider">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-4 m-auto">
-                        <a href="#" class="text-white">VIEW ALL LATEST NEWS</a>
-                    </div>
-                </div>
-            </div>
+        <section class="divider-section">
+            <DividerLink />
         </section>
 
         <!-- second jumbo -->
@@ -189,7 +183,7 @@ export default {
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-4 m-auto">
-                        <a href="#" class="text-white">VIEW ALL LIVE DATES</a>
+                        <a href="#">VIEW ALL LIVE DATES</a>
                     </div>
                 </div>
             </div>
@@ -294,10 +288,25 @@ export default {
     }
 }
 
+// DIVIDER 
 .divider {
     background-color: $divider-color;
+    transition: background-color 0.5s;
+
+    a {
+        color: white;
+    }
 }
 
+.divider:hover {
+    background-color: white;
+
+    a {
+        color: black;
+    }
+}
+
+// JUMBO 
 .jumbo {
     height: 80vh;
     display: flex;
