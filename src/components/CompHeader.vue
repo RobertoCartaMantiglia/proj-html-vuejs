@@ -72,10 +72,9 @@ header {
 }
 
 button {
-    padding: 0.5rem 1.3rem;
+    padding: 0.5rem 1.5rem;
     margin-right: 0.5rem;
     color: white;
-
 }
 
 .left-button {
@@ -86,5 +85,11 @@ button {
 .right-button {
     border: 0.5px-solid white;
     background: none;
+}
+
+.right-button:hover {
+    color: black;
+    border: none;
+    background-color: white;
 }
 </style>
