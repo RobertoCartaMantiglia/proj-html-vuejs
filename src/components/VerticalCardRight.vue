@@ -54,6 +54,13 @@ export default {
     }
 }
 
+.vertical-card:hover {
+    img {
+        opacity: 0.8;
+        transition: 0.5s ease-in-out;
+    }
+}
+
 h4 {
     color: $card-title;
     font-size: 0.9rem;

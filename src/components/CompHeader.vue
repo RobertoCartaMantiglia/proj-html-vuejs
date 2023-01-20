@@ -1,8 +1,11 @@
 
 <script>
-
+import NavBar from './NavBar.vue';
 export default {
-
+    name: 'CompHeader',
+    components: {
+        NavBar,
+    },
 }
 </script>
 <template>
@@ -14,15 +17,8 @@ export default {
                         <div class="">
                             <img src="../assets/images/avada-music-logo.png" class="w-75 ">
                         </div>
-                        <div>
-                            <nav class="navbar">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </nav>
+                        <div class="nav-wrapper">
+                            <NavBar />
                         </div>
                     </div>
                     <div class="title-section col-8 text-center">

@@ -205,6 +205,13 @@ export default {
             font-weight: bold;
         }
     }
+
+    .horizon-card:hover {
+        img {
+            opacity: 0.8;
+            transition: 0.5s ease-in-out;
+        }
+    }
 }
 
 .vertical-card-wrap {
@@ -228,6 +235,13 @@ export default {
             color: $card-title;
             font-size: 0.9rem;
             font-weight: bold;
+        }
+    }
+
+    .vertical-card:hover {
+        img {
+            opacity: 0.8;
+            transition: 0.5s ease-in-out;
         }
     }
 }
